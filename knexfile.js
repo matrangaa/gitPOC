@@ -58,10 +58,6 @@ if (process.env.NODE_ENV === 'production') {
       tableName: 'knex_migrations',
       directory: 'db/migrations'
     },
-    pool: {
-      min: 2,
-      max: 10
-    },
     ssl: true
   };
 }
