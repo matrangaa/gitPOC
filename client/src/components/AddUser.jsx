@@ -24,9 +24,9 @@ class AddUser extends React.Component {
     }).then(response => {
       return response.json();
     })
+    .then(() => this.props.getData())
     .catch(e => console.log(e, 'Error posting to /users'));
 
-    this.props.getData();
     this.setState({ name: '', email: '' });
   }
 
