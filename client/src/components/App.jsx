@@ -82,8 +82,8 @@ class App extends React.Component {
           <AddUser
             key="AddUser"
             getData={this.getData} />,
-          <hr key="hr2" />
-          // <HelloWorld />
+          <hr key="hr2" />,
+          <HelloWorld key="HelloWorld" />
         ]
       );
     } else {
