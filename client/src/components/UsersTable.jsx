@@ -2,7 +2,7 @@ import React from 'react';
 import UserEntry from './UserEntry';
 
 const UsersTable = (props) => {
-  if (props.user.length > 0) {
+  if (props.users.length > 0) {
     return (
       <table>
         <thead>

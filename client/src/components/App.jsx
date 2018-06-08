@@ -72,15 +72,17 @@ class App extends React.Component {
       return (
         [
           <UsersTable
+            key="UsersTable"
             deleteUser={this.deleteUser}
             getById={this.getById}
             getData={this.getData}
             users={this.state.users}
             selectUser={this.selectUser} />,
-          <hr />,
+          <hr key="hr1" />,
           <AddUser
+            key="AddUser"
             getData={this.getData} />,
-          <hr />
+          <hr key="hr2" />
           // <HelloWorld />
         ]
       );
