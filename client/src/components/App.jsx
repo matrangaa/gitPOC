@@ -64,7 +64,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.getData();
+    //this.getData();
   }
 
   render() {
@@ -75,21 +75,19 @@ class App extends React.Component {
             key="UsersTable"
             deleteUser={this.deleteUser}
             getById={this.getById}
-            getData={this.getData}
             users={this.state.users}
             selectUser={this.selectUser} />,
           <hr key="hr1" />,
           <AddUser
             key="AddUser"
-            getData={this.getData} />,
-          <hr key="hr2" />,
-          <HelloWorld key="HelloWorld" />
+          />,
+          <hr key="hr2" />
+          //<HelloWorld key="HelloWorld" />
         ]
       );
     } else {
       return (
         <EditUser
-          getData={this.getData}
           setEdit={this.setEdit}
           selectedUser={this.state.selectedUser} />
       );
