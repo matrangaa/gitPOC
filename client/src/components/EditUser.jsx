@@ -28,7 +28,6 @@ class EditUser extends React.Component {
       headers: new Headers({'Content-Type': 'application/json'})
     })
     .then(() => this.props.setEdit())
-    .then(() => this.props.getData())
     .catch(e => console.log(e, 'Error updating user'));
   }
 
