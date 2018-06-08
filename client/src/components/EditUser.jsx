@@ -43,27 +43,25 @@ class EditUser extends React.Component {
 
   render() {
     return (
-      [
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label htmlFor="name">Name*: </label>
-            <input type="text" id="name" placeholder="Name" onChange={this.handleUpdate} required value={this.state.name}></input>
-          </div>
-          <div>
-            <label htmlFor="email">Email*: </label>
-            <input type="email" id="email" placeholder="example@domain.com" onChange={this.handleUpdate} required value={this.state.email}></input>
-          </div>
-          <div>
-            <small>* = required</small>
-          </div>
-          <div>
-            <button type="submit">Save</button>
-          </div>
-          <div>
-            <button type="button" onClick={this.props.setEdit}>Cancel</button>
-          </div>
-        </form>
-      ]
+      <form onSubmit={this.handleSubmit}>
+        <div>
+          <label htmlFor="name">Name*: </label>
+          <input type="text" id="name" placeholder="Name" onChange={this.handleUpdate} required value={this.state.name}></input>
+        </div>
+        <div>
+          <label htmlFor="email">Email*: </label>
+          <input type="email" id="email" placeholder="example@domain.com" onChange={this.handleUpdate} required value={this.state.email}></input>
+        </div>
+        <div>
+          <small>* = required</small>
+        </div>
+        <div>
+          <button type="submit">Save</button>
+        </div>
+        <div>
+          <button type="button" onClick={this.props.setEdit}>Cancel</button>
+        </div>
+      </form>
     );
   }
 }

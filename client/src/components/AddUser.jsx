@@ -42,7 +42,7 @@ class AddUser extends React.Component {
   }
 
   render() {
-    return ([
+    return (
       <form onSubmit={this.handleSubmit}>
         <div>
           <label htmlFor="name">Name*: </label>
@@ -59,7 +59,7 @@ class AddUser extends React.Component {
           <button type="submit">Submit</button>
         </div>
       </form>
-    ]);
+    );
   }
 }
 
