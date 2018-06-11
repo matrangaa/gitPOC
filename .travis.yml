@@ -7,15 +7,3 @@ cache:
   
 script:
 - npm test
-after_success: |
-  if [ -n "$GITHUB_API_KEY" ]; then
-    cd "$TRAVIS_BUILD_DIR"
-    make web
-    cd web
-    git init
-    git checkout -b generatedBuild
-    git add .
-    git -c user.name='Travis' user.email='travis@travis-ci.org' commit -m 'Travis Build: $TRAVIS_BUILD_NUMBER'
-    git push -f -q https://matrangaa:$GITHUB_API_KEY@github.com/matrangaa/gitPOCBuild
-    cd "$TRAVIS_BUILD_DIR"
-  fi
