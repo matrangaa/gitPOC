@@ -130,7 +130,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HelloWorld = function HelloWorld() {\n  return [_react2.default.createElement(\n    'h4',\n    null,\n    'HelloWorld component'\n  ), _react2.default.createElement(\n    'h5',\n    null,\n    'A new component appears!'\n  )];\n};\n\nexports.default = HelloWorld;\n\n//# sourceURL=webpack:///./client/src/components/HelloWorld.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HelloWorld = function HelloWorld() {\n  return [_react2.default.createElement(\n    \"h4\",\n    { key: \"h4\" },\n    \"HelloWorld component\"\n  ), _react2.default.createElement(\n    \"h5\",\n    { key: \"h5\" },\n    \"A new component appears!\"\n  )];\n};\n\nexports.default = HelloWorld;\n\n//# sourceURL=webpack:///./client/src/components/HelloWorld.jsx?");
 
 /***/ }),
 
