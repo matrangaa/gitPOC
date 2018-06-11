@@ -81,8 +81,8 @@ class App extends React.Component {
           <AddUser
             key="AddUser"
           />,
-          <hr key="hr2" />,
-          <HelloWorld key="HelloWorld" />
+          <hr key="hr2" />
+          //<HelloWorld key="HelloWorld" />
         ]
       );
     } else {
