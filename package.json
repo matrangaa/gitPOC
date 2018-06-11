@@ -9,7 +9,8 @@
     "db:rollback": "knex migrate:rollback",
     "db:seed": "knex seed:run",
     "start": "node server/index.js",
-    "test": "mocha --require babel-register ./client/test/*.spec.js"
+    "test": "mocha --require babel-register ./client/test/*.spec.js",
+    "postinstall": "webpack"
   },
   "author": "matrangaa",
   "license": "ISC",
