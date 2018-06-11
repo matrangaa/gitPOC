@@ -3,7 +3,8 @@ node_js:
 - stable
 cache:
   directories:
-  - node_modules
-  
+  - node_modules  
 script:
-- npm test
+  - npm test
+after_success:
+    - npm run bulid
