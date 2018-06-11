@@ -64,7 +64,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    //this.getData();
+    this.getData();
   }
 
   render() {
