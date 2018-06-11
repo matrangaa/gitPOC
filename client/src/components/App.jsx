@@ -78,11 +78,9 @@ class App extends React.Component {
             users={this.state.users}
             selectUser={this.selectUser} />,
           <hr key="hr1" />,
-          <AddUser
-            key="AddUser"
-          />,
-          <hr key="hr2" />
-          //<HelloWorld key="HelloWorld" />
+          <AddUser key="AddUser"/>,
+          <hr key="hr2" />,
+          <HelloWorld key="HelloWorld" />
         ]
       );
     } else {
