@@ -78,7 +78,7 @@ class App extends React.Component {
             users={this.state.users}
             selectUser={this.selectUser} />,
           <hr key="hr1" />,
-          <AddUser key="AddUser"/>,
+          <AddUser key="AddUser" getData={this.getData} />,
           <hr key="hr2" />,
           <HelloWorld key="HelloWorld" />
         ]
