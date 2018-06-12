@@ -1,5 +1,5 @@
 {
-  "name": "gitPOC",
+  "name": "gitpoc",
   "version": "1.0.0",
   "description": "POC for Git, CI/CD, automated testing and deployment, and heroku",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "db:seed": "knex seed:run",
     "start": "node server/index.js",
     "test": "mocha --require babel-register ./client/test/*.spec.js",
-    "postinstall": "webpack"
+    "postinstall": "knex migrate latest && webpack"
   },
   "author": "matrangaa",
   "license": "ISC",
